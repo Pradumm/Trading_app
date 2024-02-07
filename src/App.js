@@ -7,17 +7,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Contact from './pages/home/contact'
 import Dashboard from './Page/Dashboard'
 import Orderplacetool from './components/Orderplacetool';
+import Home from './Page/home/Home';
+import LoginPage from './Page/user/LoginPage';
+import Login from './Page/user/Login';
+import Register from './Page/user/Register';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<Contact/>} /> */}
-          <Route path="/" element={<Dashboard/>} />
-          <Route path="/order" element={<Orderplacetool/>} />
+          <Route path='/' element={<LoginPage />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/home' element={<Home />} />
+          <Route path="/dash" element={<Dashboard />} />
+          <Route path="/order" element={<Orderplacetool />} />
         </Routes>
 
       </BrowserRouter>
